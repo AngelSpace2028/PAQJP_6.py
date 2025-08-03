@@ -19,7 +19,7 @@ from mpmath import mp
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Constants
-PROGNAME = "PAQJP_4"
+PROGNAME = "PAQJP_6"
 DEFAULT_OPTION = 9
 MEM = 1 << 15  # 2^15 = 32,768
 HUFFMAN_THRESHOLD = 1024  # Bytes threshold for Huffman vs. zlib compression
@@ -1089,11 +1089,11 @@ def detect_filetype(filename: str) -> Filetype:
         return Filetype.DEFAULT
 
 def main():
-    print("PAQJP_4 Compression System with Base-10 Pi Transformation (3 digits)")
+    print("PAQJP_6 Compression System with Base-10 Pi Transformation (3 digits)")
     print("Created by Jurijus Pacalovas.")
     print("Options:")
-    print("1 - Compress file (PAQJP_4 with transformations and datetime)")
-    print("2 - Decompress file (PAQJP_4 with transformations and datetime)")
+    print("1 - Compress file (PAQJP_6 with transformations and datetime)")
+    print("2 - Decompress file (PAQJP_6 with transformations and datetime)")
 
     compressor = SmartCompressor()
 
